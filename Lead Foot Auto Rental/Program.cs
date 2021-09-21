@@ -26,12 +26,13 @@ namespace Lead_Foot_Auto_Rental
                 if ((kilometers_per_hour > 9) && (kilometers_per_hour <= 25))
                 {
                     Console.WriteLine("Speed Conversion Table: ");
+                    Console.WriteLine("-------------------------------");
                     Console.WriteLine("Kilometers:" + "     " + "Miles:");
 
                     // For loop
                     for (int km = 0; km <= 200; km+=int.Parse(input))
                     {
-                        Console.WriteLine(km.ToString() + "               " + km * 0.621371);
+                        Console.WriteLine(km.ToString("n2") + "            " + (km * 0.621371).ToString("n2"));
                     }
                     Console.WriteLine("Press any key to exit the program.");
 
